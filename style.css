@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --border: 0.1vmin solid darkgrey;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eeeeee;
+}
+
+header {
+    font-size: 8vmin;
+    letter-spacing: 1vmin;
+    margin-top: 1vmin;
+    margin-bottom: 0.5vmin;
+    color: gray;
+}
+
+h1 {
+    letter-spacing: 1.5vmin;
+    font-size: 2vmin;
+    margin-top: 1vmin;
+    margin-bottom: 3vmin;
+    color: gray;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    margin-top: 2vmin;
+    margin-bottom: 3vmin;
+}
+
+#board > div {
+    display: grid;
+    height: 20vmin;
+}
+
+#board > div:hover {
+    background-color: #e8e8e8;
+}
+
+/* Individually styling the tiles to remove outside lines */
+
+/* TOP ROW */
+#t1, #t2, #t3 {
+    border-bottom: var(--border);
+}
+
+/* BOTTOM ROW */
+#t7, #t8, #t9 {
+    border-top: var(--border);
+}
+
+/* TOP CENTER TILE */
+#t2 {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+/* BOTTOM CENTER TILE */
+#t8 {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+/* CENTER TILE */
+#t5 {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+button {
+    margin-top: 3vmin;
+    margin-bottom: 3.5vmin;
+    padding: 1.5vmin;
+    font-size: 1.5vmin;
+    border: var(--border);
+    border-radius: 4%;
+    color: gray;
+    letter-spacing: 0.3vmin;
+}
+
+button:hover {
+    background-color: #dedede;
+    border: 0.1vmin solid #8c8c8c;
+    color: #535353;
+}
