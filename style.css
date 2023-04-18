@@ -4,6 +4,7 @@
 
 :root {
     --border: 0.1vmin solid darkgrey;
+    --main-text-color: gray;
 }
 
 body {
@@ -22,7 +23,7 @@ header {
     letter-spacing: 1vmin;
     margin-top: 1vmin;
     margin-bottom: 0.5vmin;
-    color: gray;
+    color: var(--main-text-color);
 }
 
 #message {
@@ -30,7 +31,7 @@ header {
     font-size: 2vmin;
     margin-top: 1vmin;
     margin-bottom: 3vmin;
-    color: gray;
+    color: var(--main-text-color);
 }
 
 #board{
@@ -87,7 +88,7 @@ button {
     font-size: 1.5vmin;
     border: var(--border);
     border-radius: 4%;
-    color: gray;
+    color: var(--main-text-color);
     letter-spacing: 0.3vmin;
 }
 
@@ -95,4 +96,12 @@ button:hover {
     background-color: #dedede;
     border: 0.1vmin solid #8c8c8c;
     color: #535353;
+}
+
+.tile {
+    font-size: 18vmin;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.08;
+    color: var(--main-text-color);
 }
