@@ -25,7 +25,7 @@ header {
     color: gray;
 }
 
-h1 {
+#message {
     letter-spacing: 1.5vmin;
     font-size: 2vmin;
     margin-top: 1vmin;
@@ -53,29 +53,29 @@ h1 {
 /* Individually styling the tiles to remove outside lines */
 
 /* TOP ROW */
-#t1, #t2, #t3 {
+#t0, #t1, #t2 {
     border-bottom: var(--border);
 }
 
 /* BOTTOM ROW */
-#t7, #t8, #t9 {
+#t6, #t7, #t8 {
     border-top: var(--border);
 }
 
 /* TOP CENTER TILE */
-#t2 {
+#t1 {
     border-left: var(--border);
     border-right: var(--border);
 }
 
 /* BOTTOM CENTER TILE */
-#t8 {
+#t7 {
     border-left: var(--border);
     border-right: var(--border);
 }
 
 /* CENTER TILE */
-#t5 {
+#t4 {
     border-left: var(--border);
     border-right: var(--border);
 }
